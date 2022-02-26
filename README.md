@@ -11,5 +11,5 @@ bin/console cache:clear
 
 ## Usage
 ```bash
-bin/console config:list
+bin/console system:config:list
 ```
