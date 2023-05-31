@@ -2,17 +2,18 @@
 
 namespace Yireo\AdditionalConfigCommands\Console\Command;
 
+use FontLib\Table\Type\name;
 use Shopware\Core\System\SystemConfig\SystemConfigService;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
+#[AsCommand(name:"system:config:list")]
 class ConfigList extends Command
 {
-    protected static $defaultName = 'system:config:list';
-
     /**
      * @var SystemConfigService
      */
