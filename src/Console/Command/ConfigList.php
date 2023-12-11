@@ -44,7 +44,7 @@ class ConfigList extends Command
 
         $table->render();
 
-        return 0;
+        return Command::SUCCESS;
     }
 
     private function addTableRow(Table $table, string $name, $value): void
